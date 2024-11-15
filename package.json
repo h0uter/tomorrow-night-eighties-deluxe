@@ -17,5 +17,10 @@
         "path": "./themes/Tomorrow Night Eighties Deluxe-color-theme.json"
       }
     ]
+  },
+  "configurationDefaults": {
+    "[python]": {
+      "editor.semanticHighlighting.enabled": true
+    }
   }
 }
