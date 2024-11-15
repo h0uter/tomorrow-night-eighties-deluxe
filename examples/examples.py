@@ -2,6 +2,9 @@ from enum import Enum
 from typing import Final
 from warnings import deprecated
 
+x = 1
+y: Final = 2
+
 
 class Cool:
     a = 1
@@ -9,7 +12,11 @@ class Cool:
     def __init__(self):
         self.b = 2
         self.B: Final = 3
+        self.c: Final = 3  # not working for members
         self.C = 4
+
+    def okidoke(self) -> int:
+        return 5
 
     @deprecated("Dont use me")
     def test(self):
@@ -24,6 +31,7 @@ cool.b
 cool.B
 cool.C
 
+cool.okidoke()
 cool.test()
 
 
