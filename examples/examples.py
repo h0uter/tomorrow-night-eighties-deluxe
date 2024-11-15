@@ -18,6 +18,11 @@ class Cool:
         self.ok: list[list[str]] = []
 
     def okidoke(self) -> int:
+        """Returns 5.
+
+        Returns:
+            The integer 5.
+        """
         return 5
 
     @deprecated("Dont use me")
