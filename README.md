@@ -12,3 +12,7 @@
 | constants (`Final`) | 0       | 1            |
 | deprecated          | 1       | 0            |
 | enums               | 1       | 0            |
+
+
+- to release new versions:
+- `vcse publish major|minor|patch`
