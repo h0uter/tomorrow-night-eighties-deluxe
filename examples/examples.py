@@ -1,3 +1,4 @@
+import math
 from enum import Enum
 from typing import Final
 from warnings import deprecated
@@ -14,6 +15,7 @@ class Cool:
         self.B: Final = 3
         self.c: Final = 3  # not working for members
         self.C = 4
+        self.ok: list[list[str]] = []
 
     def okidoke(self) -> int:
         return 5
@@ -42,3 +44,8 @@ class Colors(Enum):
 
 
 Colors.RED
+
+min(1, 2, 3)
+
+math.pi
+math.e

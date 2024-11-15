@@ -27,13 +27,27 @@
     // these are the colors specified for LSP semantic tokens (based on tokens specified by a language server such as pylance, jedi, or basedpyright)
     "semanticTokenColors": {
         "*.readonly": "#cc6566",
-        "*.constant": "#cc6566",
         "*.builtin": {
             "bold": true,
         },
         "module": { // in pylance modules are tokens of type "module"
             "underline": true
         },
+        "*.typeHint": {
+            "fontStyle": "italic"
+        },
+        "enum": {
+            "fontStyle": "bold",
+            "foreground": "#ffcc66"
+        },
+        "enumMember": {
+            "foreground": "#cc6566"
+        },
+        "variable.builtin": { // stuff like math.PI
+            "foreground": "#cc6566"
+        },
+        // basedpyright
+        "*.constant": "#cc6566",
         "namespace": { // in basedpyright modules are tokens of type "namespace"
             "underline": true
         },
