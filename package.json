@@ -19,7 +19,7 @@
     ]
   },
   "configurationDefaults": {
-    "[python]": {
+    "[Python]": {
       "editor.semanticHighlighting.enabled": true
     }
   }
