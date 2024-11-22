@@ -1,4 +1,4 @@
-![](.readme/screen.png)
+![](https://raw.githubusercontent.com/h0uter/tomorrow-night-eighties-deluxe/refs/heads/main/.readme/screen.png)
 
 # Tomorrow Night Eighties Deluxe Theme
 
