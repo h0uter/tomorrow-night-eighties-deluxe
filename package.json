@@ -27,5 +27,6 @@
         "[Python]": {
             "editor.semanticHighlighting.enabled": true
         }
-    }
+    },
+    "icon": ".readme/icon.png"
 }
