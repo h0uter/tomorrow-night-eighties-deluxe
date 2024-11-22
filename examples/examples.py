@@ -3,43 +3,7 @@ from enum import Enum
 from typing import Final
 from warnings import deprecated
 
-x = 1
-y: Final = 2
-
-
-class Cool:
-    a = 1
-
-    def __init__(self):
-        self.b = 2
-        self.B: Final = 3
-        self.c: Final = 3  # not working for members
-        self.C = 4
-        self.ok: list[list[str]] = []
-
-    def okidoke(self) -> int:
-        """Returns 5.
-
-        Returns:
-            The integer 5.
-        """
-        return 5
-
-    @deprecated("Dont use me")
-    def test(self):
-        self.b = 5
-        self.B = 6
-        self.C = 7
-
-
-cool = Cool()
-cool.a
-cool.b
-cool.B
-cool.C
-
-cool.okidoke()
-cool.test()
+import numpy as np
 
 
 class Colors(Enum):
@@ -48,9 +12,25 @@ class Colors(Enum):
     GREEN = 3
 
 
-Colors.RED
+class Cool:
+    a = Colors.RED
 
-min(1, 2, 3)
+    def __init__(self):
+        self.b = np.array([1, 2, 3])
+        self.B: Final = 3
+        self.c: Final = 3  # not working for members
+        self.C = math.pi
+        self.ok: list[list[str]] = []
+        self.ok2 = min(1, 2, 3)
 
-math.pi
-math.e
+    @deprecated("Dont use me")
+    def test(self) -> int:
+        return 5
+
+
+cool = Cool()
+cool.test()
+
+
+def wow() -> str:
+    return "wow"
