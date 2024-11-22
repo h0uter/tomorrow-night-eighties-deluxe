@@ -28,5 +28,5 @@
             "editor.semanticHighlighting.enabled": true
         }
     },
-    "icon": ".readme/icon.png"
+    "icon": "./.readme/icon.png"
 }
